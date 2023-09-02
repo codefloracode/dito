@@ -1,0 +1,2 @@
+# dito
+Wp portfolio theme
