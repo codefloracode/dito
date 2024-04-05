@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+	<title>Dito - Fotografia e Filmagem</title>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Produtora com expertise na criação de conteúdos autênticos e impactantes para marcas e artistas. Equipes de Audiovisual, operação de câmera em eventos, roteiros para videos, drone, foto e filmagem em eventos de ativação de marketing, gravação de live sets, entrega em HD ou 4K.">
 	<link rel="icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/assets/imgs/logo-thumb.ico">
 
     <?php wp_head(); ?>

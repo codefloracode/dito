@@ -12,10 +12,10 @@ get_header(); ?>
         <div class='cover-img' style="background-image: url('<?php echo get_field('cover_img'); ?>');">
             <?php if(get_field('cover_video')): ?>
                 <div class="videowrap">
-                    <video autoplay mute loop><source src="<?php echo get_field('cover_video'); ?>" type="video/mp4"></video>
+                    <video id="playable"><source src="<?php echo get_field('cover_video'); ?>" type="video/mp4"></video>
                 </div>
                 <div class="videowrap mobile">
-                    <video autoplay mute loop><source src="<?php echo get_field('cover_video_mobile'); ?>" type="video/mp4"></video>
+                    <video id="playable"><source src="<?php echo get_field('cover_video_mobile'); ?>" type="video/mp4"></video>
                 </div>
             <?php endif; ?>
         </div>

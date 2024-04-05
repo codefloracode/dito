@@ -15,6 +15,17 @@ $(document).ready(function () {
         bulletsContainer.appendChild(bullet);
     });
 
+    $('.single .cover-img .videowrap').on('click', function() {
+        var video = document.getElementById('playable');
+        if (video.paused) { 
+            video.play();
+            $('.single .cover-img .videowrap').addClass('playing');
+        } else {
+            video.pause();
+            $('.single .cover-img .videowrap').removeClass('playing');
+        }
+    });
+
     
     function scrollToSection(index) {
         if (!scrolling && index >= 0 && index < sections.length) {

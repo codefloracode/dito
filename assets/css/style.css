@@ -325,9 +325,14 @@ body {
 
 #footer svg {
   position: absolute;
-  top: 0;
+  bottom: -100px;
   width: 100%;
   z-index: 0;
+  stroke-width: 6px;
+
+  @media(min-width: 1000px) {
+    display: none;
+  }
 }
 
 #footer .prod {
@@ -475,6 +480,28 @@ body {
   margin-bottom: 10px;
 }
 
+.single .cover-img .videowrap::after {
+  content: '';
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background: url('../imgs/play.png');
+  background-size:contain;
+  background-repeat: no-repeat;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity .3s;
+  z-index: 6;
+  opacity: 1;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.single .cover-img .videowrap.playing:after {
+  opacity: 0;
+}
+
 .single p {
   color: #fff;
   max-width: calc(100vw - 48px);
@@ -509,7 +536,7 @@ body {
 }
 
 .single .gallery .bigsmall .smallimg {
-  height: 200px;
+  height: 500px;
   width: 100%;
   margin-bottom: 24px;
   background-size: cover;
@@ -524,7 +551,7 @@ body {
 }
 
 .single .gallery .fullwidth {
-  height: 200px;
+  height: 240px;
   width: calc(100% - 48px);
   margin: 0 24px 24px;
   background-size: cover;
@@ -533,6 +560,16 @@ body {
 
   @media (min-width: 1000px) {
     height: 70vh;
+  }
+}
+
+.single #footer .works {
+  display: none;
+}
+
+.single #footer .works {
+  @media (min-width: 1000px) {
+    display: none;
   }
 }
 
